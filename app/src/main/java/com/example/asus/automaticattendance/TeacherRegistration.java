@@ -56,5 +56,33 @@ public class TeacherRegistration extends AppCompatActivity implements View.OnCli
     }
 
 
-   
+    @Override
+    public void onClick(View v) {
+        String name=editText.getText().toString();
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("tecId", name);
+
+        editor.putString("admin", "tec");
+        editor.apply();
+        if(name.equals("")){
+            Toast.makeText(TeacherRegistration.this,"Please Fillup all the fields",Toast.LENGTH_SHORT).show();
+        }
+        else {
+
+
+            tranaferValues.setTecName(name);
+
+            long rowId=databaseHelper.insertTeacherData(tranaferValues);
+            if(rowId>0){
+               Toast.makeText(getApplicationContext(),"Wellcome",Toast.LENGTH_SHORT ).show();
+                intent=new Intent(TeacherRegistration.this,CourseList.class);
+                intent.putExtra("name","tec");
+                startActivity(intent);
+            }else {
+                Toast.makeText(getApplicationContext(),"Row incertation failed",Toast.LENGTH_SHORT ).show();
+            }
+        }
+
+    }
 }
