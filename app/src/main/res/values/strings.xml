@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Automatic Attendance</string>
+    <string name="alert_title">Alert Dialog</string>
+    <string name="alert_message">Sure to Exit</string>
+    <string name="about">Automatic systems always offer greater advantages over the manuals and the today’s era of technology demands it. We know, taking attendance manually in class by a class tutor is time consuming and sometimes uncomfortable. So, if there exists any system which will play the role of the class lecturer regarding calling attendance, it will be more productive and will take fewer time than before. I think my system naming “Automatic Attendance” will perform well.</string>
+
+    <string-array name="batch">
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+
+    </string-array>
+
+    <string-array name="section">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+
+    </string-array>
+
+    <string-array name="depertment">
+        <item>CSE</item>
+        <item>EEE</item>
+        <item>BBA</item>
+
+
+    </string-array>
+</resources>

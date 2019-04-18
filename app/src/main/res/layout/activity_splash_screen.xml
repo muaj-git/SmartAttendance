@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".SplashScreen"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:background="@drawable/attendance_icon1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <ProgressBar
+        android:id="@+id/proId"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_gravity="bottom|center"
+        android:layout_width="231dp"
+        android:layout_height="48dp"
+        android:layout_margin="80dp"
+        android:progressBackgroundTint="#000"
+        android:progressTint="#f50505" />
+
+
+</LinearLayout>

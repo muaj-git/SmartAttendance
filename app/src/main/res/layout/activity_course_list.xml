@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_color"
+    tools:context=".CourseList">
+
+
+    <!--<SearchView
+        android:queryHint="Search Country"
+        android:id="@+id/searchViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></SearchView>-->
+
+    <ListView
+        android:listSelector="#c9c8c0"
+        android:dividerHeight="2dp"
+        android:divider="#b9dcd1"
+        android:id="@+id/listId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </ListView>
+
+    <!--
+    <GridView
+        android:id="@+id/gridId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="50dp"
+        android:numColumns="2">
+
+    </GridView>
+    -->
+
+</LinearLayout>
