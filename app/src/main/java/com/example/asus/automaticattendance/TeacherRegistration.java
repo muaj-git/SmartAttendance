@@ -58,7 +58,7 @@ public class TeacherRegistration extends AppCompatActivity implements View.OnCli
 
     @Override
     public void onClick(View v) {
-        String name=editText.getText().toString()
+        String name=editText.getText().toString();
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor editor = preferences.edit();
         editor.putString("tecId", name);
